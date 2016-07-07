@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MaNGOS")]
 [assembly: AssemblyProduct("EventAI Creator")]
-[assembly: AssemblyCopyright("Copyright © MaNGOS 2012")]
+[assembly: AssemblyCopyright("Copyright © MaNGOS 2012 - 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
