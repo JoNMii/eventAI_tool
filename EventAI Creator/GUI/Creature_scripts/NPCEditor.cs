@@ -174,7 +174,7 @@ namespace EventAI_Creator
             menuStrip1.Focus();
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "SQL Scriptdateien (*.sql)|*.sql|Alle Dateien (*.*)|*.*";
+            saveFileDialog.Filter = "SQL File (*.sql)|*.sql|All files (*.*)|*.*";
 
             if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
@@ -192,7 +192,7 @@ namespace EventAI_Creator
             menuStrip1.Focus();
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "SQL Scriptdateien (*.sql)|*.sql|Alle Dateien (*.*)|*.*";
+            saveFileDialog.Filter = "SQL File (*.sql)|*.sql|All files (*.*)|*.*";
 
             if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
@@ -232,9 +232,9 @@ namespace EventAI_Creator
         private void helpToolStripButton_Click(object sender, EventArgs e)
         {
             if (bIsCreature)
-                System.Diagnostics.Process.Start("https://raw.github.com/mangos/mangos/master/doc/EventAI.txt");
+                System.Diagnostics.Process.Start("https://raw.githubusercontent.com/cmangos/mangos-tbc/master/doc/EventAI.txt");
             else
-                System.Diagnostics.Process.Start("https://raw.github.com/mangos/mangos/master/doc/script_commands.txt");
+                System.Diagnostics.Process.Start("https://raw.githubusercontent.com/cmangos/mangos-tbc/master/doc/script_commands.txt");
         }
 
         // Query window button

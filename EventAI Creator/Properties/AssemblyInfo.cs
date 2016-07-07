@@ -7,9 +7,9 @@ using System.Resources;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
 [assembly: AssemblyTitle("EventAI Creator")]
-[assembly: AssemblyDescription("EventAI development tool")]
+[assembly: AssemblyDescription("EventAI Development Tool")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MaNGOS")]
+[assembly: AssemblyCompany("CMaNGOS")]
 [assembly: AssemblyProduct("EventAI Creator")]
 [assembly: AssemblyCopyright("Copyright © MaNGOS 2012 - 2016")]
 [assembly: AssemblyTrademark("")]
