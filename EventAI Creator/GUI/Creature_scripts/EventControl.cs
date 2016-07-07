@@ -633,9 +633,17 @@ namespace EventAI_Creator
                         Action1Param1Combobox.DropDownWidth = DropDownWidth(Action1Param1Combobox);
                         Action1Param1Tbox.Visible = false;
                         break;
-                    case 48:            // Change movemnet
+                    case 48:            // Change movement
                         Action1Param1Combobox.Visible = true;
                         Action1Param1Combobox.Items.AddRange(Info.MovementTemplate);
+                        Action1Param1Combobox.SelectedIndex = 0;
+                        Action1Param1Combobox.DropDownStyle = ComboBoxStyle.DropDownList;
+                        Action1Param1Combobox.DropDownWidth = DropDownWidth(Action1Param1Combobox);
+                        Action1Param1Tbox.Visible = false;
+                        break;
+                    case 49:            // Dynamic Movement
+                        Action1Param1Combobox.Visible = true;
+                        Action1Param1Combobox.Items.AddRange(Info.Boolean);
                         Action1Param1Combobox.SelectedIndex = 0;
                         Action1Param1Combobox.DropDownStyle = ComboBoxStyle.DropDownList;
                         Action1Param1Combobox.DropDownWidth = DropDownWidth(Action1Param1Combobox);
@@ -820,7 +828,7 @@ namespace EventAI_Creator
                         Action2Param1Combobox.DropDownWidth = DropDownWidth(Action1Param1Combobox);
                         Action2Param1Tbox.Visible = false;
                         break;
-                    case 48:            // Change movemnet
+                    case 48:            // Change movement
                         Action2Param1Combobox.Visible = true;
                         Action2Param1Combobox.Items.AddRange(Info.MovementTemplate);
                         Action2Param1Combobox.SelectedIndex = 0;
@@ -1007,7 +1015,7 @@ namespace EventAI_Creator
                         Action3Param1Combobox.DropDownWidth = DropDownWidth(Action1Param1Combobox);
                         Action3Param1Tbox.Visible = false;
                         break;
-                    case 48:            // Change movemnet
+                    case 48:            // Change movement
                         Action3Param1Combobox.Visible = true;
                         Action3Param1Combobox.Items.AddRange(Info.MovementTemplate);
                         Action3Param1Combobox.SelectedIndex = 0;

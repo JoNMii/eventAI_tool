@@ -49,7 +49,7 @@ namespace EventAI_Creator
 
         public static string[,] ActionListInfo = new string[,]
         {
-/*00 | 01 */{"NONE","","","","Does nothign"},
+/*00 | 01 */{"NONE","","","","Does nothing"},
 /*01 | 01 */{"TEXT","-TextId","-TextId","-TextId","Simply displays the specified -TextId. When -TextId2 and -TextId3 are specified, the selection will be randomized. Text types are defined, along with other options for the text, in a table below. All values needs to be negative."},
 /*02 | 01 */{"SET_FACTION","FactionId","TempFactionFlag","","Changes faction for a creature. When param1 is zero, creature will revert to it's default faction. Flags will determine when faction is restored to default (evade, respawn etc)"},
 /*03 | 01 */{"MORPH_TO_MODEL_OR_ENTRY","CreatureEntry","ModelId","","Set either model from creature_template.entry (Param1) OR explicit modelId (Param2). If (Param1) AND (Param2) are both 0, demorph and revert to the default model."},
@@ -75,7 +75,7 @@ namespace EventAI_Creator
 /*23 | 01 */{"INC_PHASE","Value","","","Increments the phase by (param1). May be negative to decrement phase but should not be 0."},
 /*24 | 01 */{"EVADE","","","","Forces the creature to evade. Wiping all threat and dropping combat."},
 /*25 | 01 */{"FLEE","","","","Causes the creature to flee. Please use this action instead of directly casting this spell so we may change this when a more correct approach is found."},
-/*26 | 01 */{"QUEST_EVENT_ALL","QuestId","","","Calls GroupEventHappens with (param1). Only used if it's _expected_ event should complete for all players in current party"},
+/*26 | 01 */{"QUEST_EVENT_ALL","QuestId","UseThreatList","","Calls GroupEventHappens with (Param1). Only used if it's _expected_ event should call quest completion for all players in a current party. Can be used for the creature's threat list, for complex scripted events."},
 /*27 | 01 */{"CASTCREATUREGO_ALL","QuestId","SpellId","","Calls CastedCreatureOrGo for all players on the threat list with QuestID(Param1) and SpellId(Param2)"},
 /*28 | 01 */{"REMOVEAURASFROMSPELL","Target","Spellid","","Removes all auras on Target caused by Spellid"},
 /*29 | 01 */{"RANGED_MOVEMENT","Distance","Angle","","Changes the movement generator type to a ranged type. Note: Default melee type can still be done with this. Specify 0 angle and 0 distance."},
@@ -98,6 +98,7 @@ namespace EventAI_Creator
 /*46 | 01 */{"SET_THROW_MASK","EventTypeMask","","","Marks for which AIEvents the npc will throw AIEvents on its own."},
 /*47 | 01 */{"SET_STAND_STATE","StandState","","","Set the unit stand state (Param1) of the current creature."},
 /*48 | 01 */{"CHANGE_MOVEMENT","MovementType","WanderDistance","","Change the unit movement type (Param1). If the movement type is Random Movement (1), the WanderDistance (Param2) must be provided."},
+/*49 | 01 */{"DYNAMIC_MOVEMENT","Enable","","","Enable dynamic movement behavior (1 = on; 0 = off)"},
         };
 
         public static string[] EventFlags = new string[]
